@@ -16,17 +16,8 @@ class PeopleController < ApplicationController
   end
 
   private
+  
+  
 
- params.require(:person).permit(
-    :name,
-    addresses_attributes: [
-      :street_address_1,
-      :street_address_2,
-      :city,
-      :state,
-      :zipcode,
-      :address_type
-    ]
-  )
-end
+
 end
